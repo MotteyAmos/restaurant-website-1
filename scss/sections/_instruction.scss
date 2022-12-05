@@ -1,0 +1,72 @@
+.instruction{
+    text-align: center;
+    margin:5rem 0;
+    .header{
+
+    }
+    .container{
+        margin:8rem auto;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:2rem;
+
+        article{
+            box-shadow: 0 2px 4px 0px rgba(0,0,0,0.14);
+            padding:2rem;
+            border-radius: 1rem;
+            img{
+                transform: scale(1.2);
+            }
+            h4{
+                margin:1rem 0;
+                font-size:1.4rem;
+                span{
+                    margin-right:1rem;
+                    font-size:2rem;
+                }
+                
+            }
+        }
+    }
+}
+
+/*-----===========MEDIUM DEVICES======================*/ 
+@media screen and (max-width:1024px) {
+    .instruction{
+        .container{
+            margin:2rem auto;
+            grid-template-columns: repeat(3, 1fr);
+            gap:0rem;
+            article{
+                position:relative;
+                transform: scale(0.7) ;
+                padding:1rem;
+                border-radius: 1rem;
+                margin-left:-1.5rem;
+                img{
+                    transform: scale(0.7);
+                }
+            }
+        }
+    }
+}
+
+
+/* =================MEDIUM DEVICES========================*/
+@media screen and (max-width:600px) {
+    .instruction{
+        .container{
+            grid-template-columns: 1fr;
+            gap:1rem;
+            article{
+                transform: scale(0.9) ;
+                padding:1rem;
+                border-radius: 1rem;
+                margin-left:0rem;
+                img{
+                    transform: scale(0.7);
+                }
+            }
+        }
+    }
+}

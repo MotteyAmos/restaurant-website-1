@@ -1,0 +1,42 @@
+.ready{
+    background-image:linear-gradient(340deg ,hsla(194, 100%, 92%, 0.925),hsla(327, 100%, 89%, 0.925),hsla(41, 86%, 86%, 0.925)) ;
+    max-width: 100vw;
+    .container{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        article{
+            
+            img{
+                max-width: 100%;
+            }
+            h3{
+                font-size:2.5rem;
+                margin-top:9rem;
+                line-height: 52px;
+            }
+            p{
+                margin:1rem 0rem;
+            }
+        }
+    }
+}
+
+
+/*==========SMALL SCREEM DEVICES=======================*/
+@media screen and (max-width:600px) {
+    .ready{
+        padding:2rem 0;
+        .container{
+            grid-template-columns: 1fr;
+            article{
+                text-align: center;
+                h3{
+                    margin-top:3rem;
+                    font-size:2rem;
+                    line-height: 42px;
+                }
+            }
+        }
+    }
+}

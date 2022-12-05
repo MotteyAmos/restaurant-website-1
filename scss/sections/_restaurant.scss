@@ -1,0 +1,97 @@
+.restaurants{
+    margin-bottom: 5rem;
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:4rem;
+        column-gap: 6rem;
+
+        article{
+            padding-left:1rem;
+            .header{
+                p{
+                    width:80%;
+                    margin:0;
+                    letter-spacing: 1px;
+                }
+            }
+
+            h3{
+                margin:0.5rem 0;
+            }
+            .ratings{
+                color:$primary-color;
+                margin-bottom: 0.5rem;
+            }
+            .button{
+                position: relative;
+                transform: scaleY(.8);
+            }
+        }
+    }
+
+    .but{
+        position: relative;
+        margin:2rem auto;
+        width:100%;
+        text-align: center;
+        a{
+            position:relative;
+            span{
+                margin:0 5px;
+                position:absolute;
+                top:50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
+
+/*------------MEDIUM SCREEM DEVICES-----------*/ 
+@media screen and (max-width:1024px) {
+    .restaurants{
+        .container{
+            gap:0rem;
+            article{
+                transform: scale(0.9);
+                padding-left:0rem;
+
+                .header{
+                    line-height:68px;
+                    p{
+                        line-height: 32px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*============small screen devices ---------------*/
+@media screen and (max-width:600px) {
+    .restaurants{
+        .container{
+            grid-template-columns: 1fr;
+            justify-content: center;
+            gap:1.5rem;
+            article{
+                text-align: center;
+                transform: scale(1);
+                padding:1rem;
+
+                .header{
+                    h3{
+                        line-height: 42px;
+                        font-size:2rem;
+                    }
+                    p{
+                        line-height: 24px;
+                        font-size:1rem;
+                        width:100%;
+                    }
+                }
+            }
+        }
+    }
+}

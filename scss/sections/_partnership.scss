@@ -1,0 +1,59 @@
+.partnership{
+    padding:5rem 0;
+    background:linear-gradient(130deg, rgba(0,0,0,0.1), rgba(0,0,0,0.3),rgba(0,0,0,0.1));
+    text-align: center;
+    h3{
+        color: #fff;
+        margin-bottom: 2rem;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:3rem;
+        article{
+          
+                background-image:url(/assert/images/instructuion-1.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+
+            
+            &:last-child{
+                background:url(/assert/images/partner-2.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            height: 25.2rem;
+            box-shadow: 0px 0px 5px 1px $primary-color;
+            border-radius: 1rem;
+            position: relative;
+
+            h4{
+                position: absolute;
+                bottom:3rem;
+                font-size:2rem;
+                color:#fff;
+                left:4rem;
+            }
+            a{
+                position:absolute;
+                bottom:-2rem;
+                left:4rem;
+                span{
+                    position: relative;
+                    top:0.3rem;
+                }
+            }
+        }
+    }
+}
+
+/*------------small screem devices-----------------*/ 
+@media screen and (max-width:600px) {
+    .partnership{
+        .container{
+            grid-template-columns: 1fr;
+        }
+    }
+}
